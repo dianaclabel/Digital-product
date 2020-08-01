@@ -1,0 +1,105 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+flex-direction:column;
+}
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.col-1 {
+  width: 8.333333333333333%;
+}
+.col-2 {
+  width: 16.6666666666666%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33333333333333%;
+}
+.col-5 {
+  width: 41.66666666666667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33333333333333%;
+}
+.col-8 {
+  width: 66.66666666666666%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33333333333333%;
+}
+.col-11 {
+  width: 91.66666666666666%;
+}
+.col-12 {
+  width: 100%;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  padding: 20px;
+}
+/*SISTEMAS DE GRILLAS*/
+/*Los sistemas de grillas nos ayudan a configurar el espacio y tamaño de nuestros elementos. */
+.col-1 img,
+.col-2 img,
+.col-3 img,
+.col-4 img,
+.col-5 img,
+.col-6 img,
+.col-7 img,
+.col-8 img,
+.col-9 img,
+.col-10 img,
+.col-11 img,
+.col-12 img {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .container {
+    padding: 30px;
+  }
+  .md-flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 900px) {
+  .row {
+    display: inherit;
+  }
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: 100%;
+    padding: 0px;
+  }
+}

@@ -1,0 +1,58 @@
+.fadeIn{
+    /* webkit es un prefijo que especifica el navegador webkit(chrome,safari,androi)mz(monzilla)*/
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode:both;/* esta propiedad hara que se puedas leer los keyfrems de ida como de regreso*/
+    animation-fill-mode:both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;/*esta propiedad define el nombre de nuesrta animation*/
+}
+/*keyframes siempre llevara un identificador en este caso fadein*/
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    };
+    to{
+        opacity: 1;
+    }
+}
+.fadeInDow{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-name: fadeInDow;
+    animation-name: fadeInDow;
+}
+@keyframes fadeInDow{
+    from{
+    opacity: 0;
+    -webkit-transform:translate3d(0,-100%,0);
+    transform:translate3d(0,-100%,0);
+    };
+    to{
+    opacity: 1;
+    -webkit-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0);
+    }
+}
+.fadeInUp{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+@keyframes fadeInUp{
+    from{
+    opacity: 0;
+    -webkit-transform:translate3d(0,100%,0);
+    transform:translate3d(0,100%,0);
+    };
+    to{
+    opacity: 1;
+    -webkit-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0);
+    }
+}
